@@ -28,3 +28,24 @@ This is where the project goes beyond a typical homework submission. Each model 
 - **Class Distribution Plot** — Dataset balance check before training to flag potential bias
 
 ## 🛠️ Technical Pipeline
+**Stack:** Python · scikit-learn · TensorFlow/Keras · pandas · NumPy · matplotlib · seaborn
+
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/chaityrahman154-lgtm/ai-model-evaluation.git
+cd ai-model-evaluation
+pip install pandas numpy scikit-learn tensorflow matplotlib seaborn
+python model_evaluation.py
+```
+
+The script outputs all plots sequentially: class distribution → accuracy/F1 comparison → confusion matrices → ROC curves.
+
+## 💡 Key Takeaways
+
+- Accuracy alone is misleading when class distributions are uneven — F1-score and ROC-AUC tell a more honest story
+- The Neural Network captures complex feature interactions that linear models miss, but at the cost of interpretability
+- Confusion matrix analysis reveals *which* quality tier is hardest to classify — a finding that matters for real deployment decisions
+
+## License
+MIT License — see `LICENSE` for details.
