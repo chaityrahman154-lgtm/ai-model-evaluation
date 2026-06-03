@@ -28,6 +28,22 @@ This is where the project goes beyond a typical homework submission. Each model 
 - **Class Distribution Plot** — Dataset balance check before training to flag potential bias
 
 ## 🛠️ Technical Pipeline
+Dataset.csv
+↓
+Null value imputation (SimpleImputer, mean strategy)
+↓
+Categorical encoding (LabelEncoder on Has_Unit_Tests, Quality_Label)
+↓
+Feature scaling (StandardScaler)
+↓
+80/20 Train-Test Split (random_state=42)
+↓
+Train: Logistic Regression | Naive Bayes | Neural Network | K-Means
+↓
+Evaluate: Accuracy, F1, Confusion Matrix, ROC/AUC
+↓
+Visualize with matplotlib & seaborn
+
 **Stack:** Python · scikit-learn · TensorFlow/Keras · pandas · NumPy · matplotlib · seaborn
 
 ## 🚀 Getting Started
